@@ -1,8 +1,8 @@
 
 const initState = [
-    { id: 1, name: 'Learn Javascript', completed: false, prioriry: 'Medium' },
-    { id: 2, name: 'Learn Redux', completed: true, prioriry: 'High' },
-    { id: 3, name: 'Learn NodeJs', completed: false, prioriry: 'Low' }
+    { id: 1, name: 'Learn Javascript', completed: false, priorty: 'Medium' },
+    { id: 2, name: 'Learn Redux', completed: true, priorty: 'High' },
+    { id: 3, name: 'Learn NodeJs', completed: false, priorty: 'Low' }
 ]
 
 

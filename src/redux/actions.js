@@ -18,10 +18,10 @@ export const statusFilterChange = (status) => {
         payload: status
     }
 }
-export const prioriryFilterChange = (prioriry) => {
+export const priortyFilterChange = (priorty) => {
     return {
-        type: 'filters/prioriryFilterChange',
-        payload: prioriry
+        type: 'filters/priortyFilterChange',
+        payload: priorty
     }
 }
 export const toggleCompletedChange = (todoId) => {

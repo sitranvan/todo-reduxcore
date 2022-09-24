@@ -8,7 +8,7 @@ import Todo from '../Todo';
 
 export default function TodoList() {
   const [todoName, setTodoName] = useState('')
-  const [prioriry, setPrioriry] = useState('Medium')
+  const [priorty, setPriorty] = useState('Medium')
 
 
   const dispatch = useDispatch()
@@ -19,30 +19,30 @@ export default function TodoList() {
   }
 
   const handlePriorityChange = (value) => {
-    setPrioriry(value) // trong ant-design tag Select e.target.value <=> value
+    setPriorty(value) // trong ant-design tag Select e.target.value <=> value
   }
   const handleAddTodo = () => {
     dispatch(addTodo({
       id: v4(),
       name: todoName,
       completed: false,
-      prioriry: prioriry
+      priorty: priorty
     }))
     setTodoName('')
-    setPrioriry('Medium')
+    setPriorty('Medium')
   }
 
   return (
     <Row style={{ height: 'calc(100% - 40px)' }}>
       <Col span={24} style={{ height: 'calc(100% - 40px)', overflowY: 'auto' }}>
         {todoList.map(todo => (
-          <Todo id={todo.id} key={todo.id} name={todo.name} prioriry={todo.prioriry} completed={todo.completed} />
+          <Todo id={todo.id} key={todo.id} name={todo.name} priorty={todo.priorty} completed={todo.completed} />
         ))}
       </Col>
       <Col span={24}>
         <Input.Group style={{ display: 'flex' }} compact>
           <Input value={todoName} onChange={handleInputChange} />
-          <Select defaultValue="Medium" value={prioriry} onChange={handlePriorityChange}>
+          <Select defaultValue="Medium" value={priorty} onChange={handlePriorityChange}>
             <Select.Option value='High' label='High'>
               <Tag color='red'>High</Tag>
             </Select.Option>

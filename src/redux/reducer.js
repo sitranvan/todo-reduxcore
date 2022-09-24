@@ -5,7 +5,7 @@ import todoListReducer from "../components/TodoList/TodoListSlice"
 // const rootReducer = (state = {}, action) => {
 //     // action là 1 object với {
 //     //     type:"todoList/addTodo"
-//     //     payload: { id: 4, name: 'Learn PHP', completed: false, prioriry: 'Low' }
+//     //     payload: { id: 4, name: 'Learn PHP', completed: false, priorty: 'Low' }
 //     // }
 //     // split reducer
 //     console.log({ state, action })
